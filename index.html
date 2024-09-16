@@ -1,64 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Alura MIDI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/bateria.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
-    <section>
-        <button classs="tecla tecla_pom"   onclick="tocaSomPom">POM</button>
-        <button classs="tecla tecla_clap"  onclick="tocaSomClap">CLAP</button>
-        <button classs="tecla tecla_tim"   onclick="tocaSomTim">TIM</button>
 
-        <button classs="tecla tecla_puff"  onclick="tocaSomPuff">PUFF</button>
-        <button classs="tecla tecla_splash" onclick="tocaSomSplash">SPLASH</button>
-        <button classs="tecla tecla_toim"  onclick="tocaSomToim">TOIM</button>
+    <h1>Alura Midi</h1>
 
-        <button classs="tecla tecla_psh"   onclick="tocaSomPsh">PSH</button>
-        <button classs="tecla tecla_tic"   onclick="tocaSomTic">TIC</button>
-        <button classs="tecla tecla_tom"   onclick="tocaSomTom">TOM</button>
-       
+    <section class="teclado">
+        <button class="tecla tecla_pom">Pom</button>
+        <button class="tecla tecla_clap">Clap</button>
+        <button class="tecla tecla_tim">Tim</button>
+
+        <button class="tecla tecla_puff">Puff</button>
+        <button class="tecla tecla_splash">Splash</button>
+        <button class="tecla tecla_toim">Toim</button>
+
+        <button class="tecla tecla_psh">Psh</button>
+        <button class="tecla tecla_tic">Tic</button>
+        <button class="tecla tecla_tom">Tom</button>
     </section>
-<audio control src="sounds/keyq.wav"></audio>
-<audio control src="sounds/keyw.wav"></audio>    
-<audio control src="sounds/keye.wav"></audio>
-<audio control src="sounds/keya.wav"></audio>
-<audio control src="sounds/keys.wav"></audio>
-<audio control src="sounds/keyd.wav"></audio>
-<audio control src="sounds/keyz.wav"></audio>
-<audio control src="sounds/keyx.wav"></audio>
-<audio control src="sounds/keyc.wav"></audio>
 
-<script>
-    function tocaSomPom(){
-        document.querySelector('#som_tecla_pom').play()
-    }
-    function tocaSomClap(){
-        document.querySelector('#som_tecla_clap').play()
-    }
-    function tocaSomTim(){
-        document.querySelector('#som_tecla_tim').play()
-    }
-    function tocaSomPuff(){
-        document.querySelector('#som_tecla_puff').play()
-    }
-    function tocaSomSplash(){
-        document.querySelector('#som_tecla_splash').play()
-    }
-    function tocaSomToim(){
-        document.querySelector('#som_tecla_toim').play()
-    }
-    function tocaSomPsh(){
-        document.querySelector('#som_tecla_psh').play()
-    }
-    function tocaSomTic(){
-        document.querySelector('#som_tecla_tic').play()
-    }
-    function tocaSomTom(){
-        document.querySelector('#som_tecla_tom').play()
-    }
+    <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
+    <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
+    <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
+    <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
+    <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
+    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
+    <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
+    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
+    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
-</script>
+    <script>
+        function tocaSomPom(){
+            document.querySelector('#som_tecla_pom').play()
+        }
+        function tocaSomClap(){
+            document.querySelector('#som_tecla_clap').play()
+        }
+        function tocaSomTim(){
+            document.querySelector('#som_tecla_tim').play()
+        }
+        function tocaSomPuff(){
+            document.querySelector('#som_tecla_puff').play()
+        }
+        function tocaSomSplash(){
+            document.querySelector('#som_tecla_splash').play()
+        }
+        function tocaSomToim(){
+            document.querySelector('#som_tecla_toim').play()
+        }
+        function tocaSomPsh(){
+            document.querySelector('#som_tecla_psh').play()
+        }
+        function tocaSomTic(){
+            document.querySelector('#som_tecla_tic').play()
+        }
+        function tocaSomTom(){
+            document.querySelector('#som_tecla_tom').play()
+        }
+    
+    </script>
 </body>
 </html>
